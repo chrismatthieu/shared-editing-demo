@@ -27,13 +27,14 @@ ipfs.once('ready', () => ipfs.id((err, info) => {
     },
     connector: {
       name: 'ipfs',
-      room: 'ipfs-yjs-demo',
+      room: 'Textarea-example-dev',
       ipfs: ipfs
     },
     share: {
-      textfield: 'Text'
+      textarea: 'Text'
     }
   }).then((y) => {
-    y.share.textfield.bind(document.getElementById('textfield'))
+    y.share.textarea.bind(document.getElementById('textfield'))
   })
+
 }))
